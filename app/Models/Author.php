@@ -10,37 +10,32 @@ class Author extends Model
         [
             'id' => 1,
             'name' => 'Tere Liye',
-            'nationality' => 'Indonesia',
-            'birth_year' => 1979,
-            'books_written' => 35
+            'photo' => 'tere_liye.jpg',
+            'bio' => 'Tere Liye adalah penulis asal Indonesia yang dikenal dengan karya-karya bertema kehidupan, keluarga, dan nilai moral.'
         ],
         [
             'id' => 2,
             'name' => 'Mark Manson',
-            'nationality' => 'United States',
-            'birth_year' => 1984,
-            'books_written' => 5
+            'photo' => 'mark_manson.jpg',
+            'bio' => 'Mark Manson adalah penulis dan blogger asal Amerika Serikat, terkenal dengan gaya penulisan yang jujur dan sarkastik dalam membahas kehidupan modern.'
         ],
         [
             'id' => 3,
             'name' => 'Masashi Kishimoto',
-            'nationality' => 'Japan',
-            'birth_year' => 1974,
-            'books_written' => 20
+            'photo' => 'masashi_kishimoto.jpg',
+            'bio' => 'Masashi Kishimoto adalah mangaka asal Jepang yang menciptakan serial terkenal “Naruto” dan dikenal atas gaya ilustrasi khasnya.'
         ],
         [
             'id' => 4,
             'name' => 'Andrea Hirata',
-            'nationality' => 'Indonesia',
-            'birth_year' => 1976,
-            'books_written' => 10
+            'photo' => 'andrea_hirata.jpg',
+            'bio' => 'Andrea Hirata adalah novelis Indonesia yang terkenal dengan novel debutnya “Laskar Pelangi” yang diangkat dari kisah nyata masa kecilnya.'
         ],
         [
             'id' => 5,
             'name' => 'J.K. Rowling',
-            'nationality' => 'United Kingdom',
-            'birth_year' => 1965,
-            'books_written' => 14
+            'photo' => 'jk_rowling.jpg',
+            'bio' => 'J.K. Rowling adalah penulis asal Inggris, pencipta seri “Harry Potter” yang menjadi fenomena global dalam dunia sastra dan perfilman.'
         ],
     ];
 

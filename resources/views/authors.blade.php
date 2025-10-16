@@ -14,7 +14,8 @@
         <ul>
             <li>{{ $item['id'] }}</li>
             <li>{{ $item['name'] }}</li>
-            <li>{{ $item['nationality'] }}</li>
+            <li>{{ $item['photo'] }}</li>
+            <li>{{ $item['bio'] }}</li>
         </ul>
     @endforeach
 </body>

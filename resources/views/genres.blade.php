@@ -8,5 +8,12 @@
 </head>
 <body>
     <p>Ini adalah halama genres</p>
+
+    @foreach ($genres as $genre)
+        <ul>
+            <li>{{ $genre['name'] }}</li>
+            <li>{{ $genre['description'] }}</li>
+        </ul>
+    @endforeach
 </body>
 </html>
