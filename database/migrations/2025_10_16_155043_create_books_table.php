@@ -20,11 +20,6 @@ return new class extends Migration
             $table->string('cover_photo'); 
             $table->unsignedBigInteger('genre_id'); // genre_id INT (foreign key)
             $table->unsignedBigInteger('author_id'); // author_id INT (foreign key)
-
-            // Relasi ke tabel authors & genres
-            // $table->foreign('genre_id')->references('id')->on('genres')->onDelete('cascade');
-            // $table->foreign('author_id')->references('id')->on('authors')->onDelete('cascade');
-
             $table->timestamps();
         });
     }
