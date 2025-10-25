@@ -4,6 +4,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AuthorController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\GenreController;
+use App\Http\Controllers\TransactionController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -28,6 +29,9 @@ Route::get('/genres/{id}', [GenreController::class, 'show']); // Show Detail
 
 Route::get('/books', [BookController::class, 'index']); // Semua bisa lihat buku
 Route::get('/books/{id}', [BookController::class, 'show']); // Detail buku
+
+Route::get('/transactions', [TransactionController::class, 'index']); // Semua bisa lihat buku
+Route::get('/transactions/{id}', [TransactionController::class, 'show']); 
 
 // ----------------------
 // PROTECTED ROUTES (Admin Only)
