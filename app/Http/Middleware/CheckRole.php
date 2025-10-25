@@ -30,7 +30,7 @@ class CheckRole
             return $next($request);
         } catch (JWTException $e) {
             return response()->json([
-                'success' => true,
+                'success' => false,
                 'message' => 'Token is invalid or expired',
             ], 401);
         }
