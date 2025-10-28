@@ -17,32 +17,32 @@ Route::post('/login', [AuthController::class, 'login']);
 Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth:api');
 
 
-Route::apiResource('/books', BookController::class);
-Route::apiResource('/authors', AuthorController::class);
-Route::apiResource('/genres', GenreController::class);
-Route::apiResource('/transactions', GenreController::class);
+// Route::apiResource('/books', BookController::class);
+// Route::apiResource('/authors', AuthorController::class);
+// Route::apiResource('/genres', GenreController::class);
+// Route::apiResource('/transactions', GenreController::class);
 
 
-// // ----------------------
-// // PUBLIC ROUTES (Tanpa Login)
-// // ----------------------
-// Route::apiResource('/books', BookController::class)->only(['index', 'show']);
-// Route::apiResource('/authors', AuthorController::class)->only(['index', 'show']);
-// Route::apiResource('/genres', GenreController::class)->only(['index', 'show']);
+// ----------------------
+// PUBLIC ROUTES (Tanpa Login)
+// ----------------------
+Route::apiResource('/books', BookController::class)->only(['index', 'show']);
+Route::apiResource('/authors', AuthorController::class)->only(['index', 'show']);
+Route::apiResource('/genres', GenreController::class)->only(['index', 'show']);
 
-// // ----------------------
-// // PROTECTED ROUTES (Admin Only)
-// // ----------------------
+// ----------------------
+// PROTECTED ROUTES (Admin Only)
+// ----------------------
 
-// // Route::middleware(['auth:api'])->group(function () {
-// //     Route::middleware(['role:customer'])->group(function () {
-// //         Route::apiResource('/transactions', TransactionController::class)->only(['store', 'update', 'show']);
-// //     });
+// Route::middleware(['auth:api'])->group(function () {
+//     Route::middleware(['role:customer'])->group(function () {
+//         Route::apiResource('/transactions', TransactionController::class)->only(['store', 'update', 'show']);
+//     });
 
-// //     Route::middleware(['role:admin'])->group(function () {
-// //         Route::apiResource('/books', BookController::class)->only(['store', 'update', 'destroy']);
-// //         Route::apiResource('/authors', AuthorController::class)->only(['store', 'update', 'destroy']);
-// //         Route::apiResource('/genres', GenreController::class)->only(['store', 'update', 'destroy']);
-// //         Route::apiResource('/transactions', TransactionController::class)->only(['index', 'destroy']);
-// //     });
-// // });
+//     Route::middleware(['role:admin'])->group(function () {
+//         Route::apiResource('/books', BookController::class)->only(['store', 'update', 'destroy']);
+//         Route::apiResource('/authors', AuthorController::class)->only(['store', 'update', 'destroy']);
+//         Route::apiResource('/genres', GenreController::class)->only(['store', 'update', 'destroy']);
+//         Route::apiResource('/transactions', TransactionController::class)->only(['index', 'destroy']);
+//     });
+// });
